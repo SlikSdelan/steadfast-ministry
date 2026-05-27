@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Steadfast Ministry</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+      url('58E74528-71A6-4248-AC16-42FB7A9B0B6B.jpeg');
+      background-size:cover;
+      background-position:center;
+      height:100vh;
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:22px;
+      max-width:800px;
+      margin:auto;
+    }
+
+    nav{
+      position:fixed;
+      width:100%;
+      background:#0d3b66;
+      padding:15px;
+      top:0;
+      z-index:1000;
+    }
+
+    nav ul{
+      display:flex;
+      justify-content:center;
+      list-style:none;
+      flex-wrap:wrap;
+    }
+
+    nav ul li{
+      margin:10px 20px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:30px;
+      color:#0d3b66;
+      font-size:38px;
+    }
+
+    .about-container{
+      display:flex;
+      gap:40px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .about-container img{
+      width:350px;
+      border-radius:10px;
+    }
+
+    .about-text{
+      flex:1;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+      border-radius:10px;
+    }
+
+    .donation-box,
+    .contact-box{
+      background:#0d3b66;
+      color :white;
+      font-size:18px;
+      padding:15px 30px;
+      border-radius:8px;
+      cursor:pointer;
+      transition :0.3s;
+      text-align:center;
+      donation:white ;
+      
+    }
+
+    footer{
+      background:#0d3b66;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
+    }
+
+    .verse{
+      margin-top:20px;
+      font-style:italic;
+      color:#ffd166;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:40px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .about-container{
+        flex-direction:column;
+      }
+
+      .about-container img{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#donate">Donate</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <h1>Steadfast Ministry</h1>
+
+      <p>
+        Reaching children with the Good News of Christ,
+        nurturing them spiritually, feeding them with love,
+        and equipping them with life skills according to
+        the Word of God.
+      </p>
+
+      <p class="verse">
+        “Let the little children come to me.” — Matthew 19:14
+      </p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About me</h2>
+
+    <div class="about-container">
+
+      <img src="images/paul.jpg" alt="children">
+
+      <div class="about-text">
+
+        <p>
+          Steadfast Ministry is a Christian ministry dedicated
+          to reaching children with the Gospel of Jesus Christ.
+          The ministry was founded in December 2023 by
+          <strong>Rev Paul Nehemiah Onyango</strong> a serving Anglican church pastor 
+          with over 30 years of ministry experience as the director and 
+          <strong>lani page</strong> as the founder,
+          
+        </p>
+
+        <br>
+
+        <p>
+          Through Bible teaching, feeding programs,
+          mentorship, and life skills training,
+          the ministry seeks to transform the lives
+          of children spiritually, emotionally,
+          and socially in line with the Scriptures.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="mission">
+    <h2>Mission & Vision</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Our Mission</h3>
+
+        <p>
+          To minister to children through the teaching
+          of God’s Word, providing feeding programs,
+          nurturing Christian values, and empowering
+          them with life skills that help them grow
+          into responsible and Christ-centered individuals.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Our Vision</h3>
+
+        <p>
+          To raise a generation of children firmly rooted
+          in Christ, spiritually transformed, equipped
+          with life skills, and empowered to positively
+          impact their communities for the glory of God.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="programs">
+    <h2>Our Programs</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Bible Teaching Program</h3>
+
+        <p>
+          Everyday Bible teaching sessions are conducted
+          during the three weeks in December to teach
+          children the Good News of Jesus Christ,
+          prayer, worship, and Christian living.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Feeding Program</h3>
+
+        <p>
+          The ministry provides breakfast and lunch
+          for children throughout the three weeks
+          in December to ensure they are nourished
+          physically while growing spiritually.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Life Skills Program</h3>
+
+        <p>
+          Children are equipped with important life skills,
+          mentorship, teamwork, discipline, creativity,
+          and positive values to help them grow confidently.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+
+      <img src="images/steadfast 1.jpg" alt="">
+      <img src="images/steadfast 3.jpg" alt="">
+      <img src="images/steadfast 4.jpg" alt="">
+      <img src="images/steadfast 5.jpg" alt="">
+      <img src="images/steadfast 6.jpg" alt="">
+      <img src="images/steadfast 7.jpg" alt="">
+      <img src="images/steadfast 8.jpg" alt="">
+      <img src="images/steadfast 9.jpg" alt="">
+      <img src="images/steadfast 10.jpg" alt="">
+
+    </div>
+  </section>
+
+  <section id="donate">
+    <h2>surpot The Ministry</h2>
+
+    <div class="donation-box">
+
+      <p>
+        Your support helps us feed children,
+        teach them the Word of God,
+        and provide life-changing programs.
+      </p>
+
+      <br>
+
+      <h3>M-Pesa Donations</h3>
+
+      <h3>0722446634</h3>
+      <br>
+      <a href="https://Wa.me/254722446634" target="_blank"class="donate-btn"><strong>Donate</strong></a>
+           via WhatsApp
+        </button>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+
+      <p><strong>Phone:</strong> 0722446634</p>
+      
+      <p><strong>email:</strong>nehemiahoduor@gmail.com</p>
+
+      <p><strong>WhatsApp:</strong> 0722446634</p>
+
+      <p><strong>Location:</strong>Kenya, Bondo</p>
+
+    </div>
+  </section>
+
+  <footer>
+
+    <h3>Steadfast Ministry</h3>
+
+    <p>
+      Sharing the love of Christ with children through
+      faith, feeding, and mentorship.
+    </p>
+
+    <p class="verse">
+      “Train up a child in the way he should go.”
+      — Proverbs 22:6
+    </p>
+
+  </footer>
+
+</body>
+</html>
