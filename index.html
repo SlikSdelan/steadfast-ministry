@@ -129,14 +129,27 @@
       border-radius:10px;
     }
     .gallary-item{
-      text-align:Center;
+      position:relative;
+      overflow:hidden;
+      Border-radius:10Px
     }
-    .gallary-item p{
-      margin-top:10px;
-      font-size:14px;
-      color:#555;
-      line-height:1.5;
-      padding:0 10px;
+    .gallary-item img{
+      width:100px;
+      Height:300px;
+      object-fit:cover;
+    }
+    .gallary-caption{
+      position:absolute;
+      top:0;
+      Width:100%;
+      background:rgba(0,0,0,0.7);
+      color:white;
+      padding:10px;
+      font-size:16px;
+      font-weight:bold;
+      text-align:center;
+      box-size:border-box;
+      
     }
 
     .donation-box,
@@ -325,17 +338,45 @@
     <h2>Gallery</h2>
 
     <div class="gallery">
-      <img src="steadfast1.jpg" alt="Child engaged in creative activity"/>
-      <p>encouraging creativity and self expanssion</p>
+      
+      <img src="steadfast1.jpg" alt=""/>
+      <p>encouraging creativity and self expanssion.</p>
+      
     </div>
     <div class="gallery-item">
-      <img src="steadfast3.jpg" alt="Church based children program"/>
-      <img src="steadfast4.jpg" alt="Outdoor mentorship sesssion"/>
-      <img src="steadfast5.jpg" alt="Children sharing a meal"/>
-      <img src="steadfast6.jpg" alt="Children fellowship gathering"/>
-      <img src="steadfast7.jpg" alt="Community fun day"/>
-      <img src="steadfast8.jpg" alt="Child receiving a meal"/>
-      <img src="steadfast9.jpg" alt="Team building and recreation"/>
+      <img src="steadfast3.jpg" alt=""/>
+      <p>partnering with local churches to transformlives through education and community outreach.</p>
+      
+    </div>
+    <div class="gallary-item">
+      <img src="steadfast4.jpg" alt=""/>
+      <p>Surporting children through educational activities,mentorship and character development.</p>
+      
+    </div>
+    <div class="gallary-item">
+      <img src="steadfast5.jpg" alt=""/>
+      <p>Providing nutritious meals and safe environment where children can growlearn and thrive.</p>
+      
+    </div>
+    <div>
+      <img src="steadfast6.jpg" alt=""/>
+      <p>gathering children together for worship, Fellowship and spiritual growth.</p>
+      
+    </div>
+    <div class="gallary-item">
+      <img src="steadfast7.jpg" alt=""/>
+      <p>Creating joyful moments that foster friendship,confidence and a sence of belonging.</p>
+      
+    </div>
+    <div class="gallary-item">
+      <img src="steadfast8.jpg" alt=""/>
+      <p>Meeting practical needs through feeding programs that bring hope and care to 
+      to vulnarable children.</p>
+      
+    </div>
+    <div class="gallary-item">
+      <img src="steadfast9.jpg" alt=""/>
+      <p>Building team work ,leadership and confidence through engaging outdoor activities.</p>
 
     </div>
   </section>
